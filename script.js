@@ -17,7 +17,6 @@ let VersionArr = str.split(browserName);
 
 let version = VersionArr[1].split(" ")[0];
 
-let Div = documnet.createElement("div");
-Div.id = "browser-info";
+const Div = document.querySelector("#browser-info");
 Div.innerText = "You are using " + browserName + " version " + version;
 
